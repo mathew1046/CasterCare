@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1120" viewBox="0 0 1200 1120" role="img" aria-labelledby="title desc">
+<title id="title">CasterCare proposed system architecture</title>
+<desc id="desc">One Nordic development kit reads vibration, two forces and independent speeds, controls a guarded roller, and communicates results by Bluetooth. This is not a wiring schematic.</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#476078"/></marker></defs>
+<rect width="1200" height="1120" fill="#f6f8fb"/>
+<style>text{font-family:Arial,sans-serif;fill:#172b40}.title{font-size:32px;font-weight:700}.head{font-size:20px;font-weight:700}.body{font-size:17px}.note{font-size:15px;fill:#496077}.wire{fill:none;stroke:#476078;stroke-width:2.5;marker-end:url(#arrow)}</style>
+<text class="title" x="48" y="55">CasterCare</text><text class="body" x="48" y="87">Proposed bench prototype • one controller • one compact anomaly model</text>
+<rect x="48" y="130" width="340" height="150" rx="12" fill="#ffffff" stroke="#bdcbd8"/>
+<text class="head" x="66" y="161">Vibration</text>
+<text class="body" x="66" y="191">ADXL345 on caster fork</text>
+<text class="body" x="66" y="216">SPI and data-ready</text>
+<text class="body" x="66" y="241">3.3 V interface</text>
+<rect x="430" y="130" width="340" height="150" rx="12" fill="#ffffff" stroke="#bdcbd8"/>
+<text class="head" x="448" y="161">Two force channels</text>
+<text class="body" x="448" y="191">500 g drag + 10 kg normal</text>
+<text class="body" x="448" y="216">One HX711 for each cell</text>
+<text class="body" x="448" y="241">5 V analog / 3.3 V logic</text>
+<rect x="812" y="130" width="340" height="150" rx="12" fill="#ffffff" stroke="#bdcbd8"/>
+<text class="head" x="830" y="161">Independent speed</text>
+<text class="body" x="830" y="191">Drive encoder: 5 V + dividers</text>
+<text class="body" x="830" y="216">Caster: optical disk sensor</text>
+<text class="body" x="830" y="241">Compare motion to detect slip</text>
+<rect x="300" y="365" width="600" height="205" rx="12" fill="#e9f1fb" stroke="#bdcbd8"/>
+<text class="head" x="318" y="396">Nordic nRF54LM20 DK</text>
+<text class="body" x="318" y="426">CPU: speed, load, slip and data-quality checks</text>
+<text class="body" x="318" y="451">One compact vibration anomaly model</text>
+<text class="body" x="318" y="476">CPU reference; Axon evaluated if supported</text>
+<text class="body" x="318" y="501">3.3 V GPIO configuration must be verified</text>
+<path class="wire" d="M218 280 V325 H400 V365"/>
+<path class="wire" d="M600 280 V365"/>
+<path class="wire" d="M982 280 V325 H800 V365"/>
+<rect x="48" y="655" width="340" height="145" rx="12" fill="#ffffff" stroke="#bdcbd8"/>
+<text class="head" x="66" y="686">Nearby phone or laptop</text>
+<text class="body" x="66" y="716">BLE commands and status</text>
+<text class="body" x="66" y="741">Compact results and history</text>
+<text class="body" x="66" y="766">Raw export only on request</text>
+<rect x="430" y="655" width="340" height="145" rx="12" fill="#ffffff" stroke="#bdcbd8"/>
+<text class="head" x="448" y="686">Motor control</text>
+<text class="body" x="448" y="716">DRV8876 driver</text>
+<text class="body" x="448" y="741">12 V LP gearmotor</text>
+<text class="body" x="448" y="766">Flexible 4 mm to 8 mm coupling</text>
+<rect x="812" y="655" width="340" height="145" rx="12" fill="#ffffff" stroke="#bdcbd8"/>
+<text class="head" x="830" y="686">Test and report</text>
+<text class="body" x="830" y="716">Reject invalid conditions</text>
+<text class="body" x="830" y="741">Confirm suspicious test once</text>
+<text class="body" x="830" y="766">Inspect, service and retest</text>
+<path class="wire" d="M380 570 V610 H218 V655"/>
+<path class="wire" d="M600 570 V655"/>
+<path class="wire" d="M820 570 V610 H982 V655"/>
+<rect x="240" y="875" width="720" height="140" rx="12" fill="#fff4df" stroke="#bdcbd8"/>
+<text class="head" x="258" y="906">Guarded roller fixture</text>
+<text class="body" x="258" y="936">Separate bearing-supported shaft carries caster preload</text>
+<text class="body" x="258" y="961">Physical stop cuts motor power; overload stops protect cells</text>
+<text class="body" x="258" y="986">Start with one detached caster and light measured load</text>
+<path class="wire" d="M600 800 V875"/>
+<text class="note" x="48" y="1060">Functional diagram only. See hardware/INTERFACES.md for supply domains and unassigned GPIO mapping.</text>
+<text class="note" x="48" y="1086">Research/design stage • no assembled prototype or measured performance claimed • 26 October 2026</text></svg>

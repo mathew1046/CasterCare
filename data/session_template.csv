@@ -1,0 +1,1 @@
+session_id,caster_id,reference_version,date_utc,condition_label,label_evidence,roller_diameter_mm,caster_diameter_mm,roller_rpm,caster_rpm,normal_force_n,mean_drag_n,anomaly_score,speed_valid,load_valid,slip_valid,measurement_valid,outcome,service_action,notes
