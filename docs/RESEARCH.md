@@ -38,9 +38,9 @@ Checked 26 October 2026. Manufacturer sources support component specifications; 
 
 ## Procurement evidence and limits
 
-Observed reference prices: motor USD 53.95, driver USD 8.15, Adafruit accelerometer USD 17.50, 500 g cell USD 15.50, bracket pair USD 10.95 and optional hub pair USD 10.95. These six purchase packages sum to **USD 117.00**, including an optional part. This is a **partial reference subtotal**, not a build total. It excludes the DK, two HX711 boards, 10 kg cell, optics, power, mechanics, shipping, taxes and import costs. Product pages can be cached; recheck checkout price and availability.
+The [BOM price evidence](../hardware/BOM.md#price-evidence-and-exact-package-contents) now includes published supplier prices for the DK, sensors, ADCs, motor/driver, supplies, stop switch, passive components, complete caster and coupling. Required listed parts subtotal **USD 299.78**; separately identified fabrication/consumable estimates add **USD 180.00**, making a **USD 479.78 planning budget** before delivery, taxes and import costs. Optional B09 adds USD 10.95. Estimates are not vendor prices. Some product-page content is cached; recheck checkout price and availability. B13 and B14 displayed out of stock.
 
-Other component prices were not verified cleanly enough to publish as current quotes. They remain quote-required in the BOM. Do not treat an empty price as zero. Local fabrication and the selected caster need real quotations after dimensions are fixed.
+No unidentified item is assigned a fabricated supplier price. B17, B18, B21, B22 and B24–B27 carry explicit planning allowances; custom dimensions, materials and shop labor still need actual quotations. B28/B29 have zero additional cost only under the documented reuse assumption; access is not confirmed. The CSV separates observed supplier prices from estimated budgets so an estimate cannot be treated as a verified quote.
 
 India sourcing entry points, not verified stock guarantees:
 
